@@ -73,7 +73,7 @@ function unserialize (data) {
       for (i = 0; i < length; i++) {
         chr = data.slice(offset + (i - 1), offset + i);
         buf.push(chr);
-        length -= utf8Overhead(chr);
+        //length -= utf8Overhead(chr);
       }
       return [buf.length, buf.join('')];
     },
